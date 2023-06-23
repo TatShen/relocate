@@ -1,39 +1,249 @@
-.container{
-    background-image: url(/images/Для\ банера\ 2.svg);
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto/Roboto-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
 }
 
-.content{
-    max-width: 1563px;
-    height: 99vh;
-    border: 2px solid black;
-    margin: 0 208px;
+body {
+    background-image: url(images/Frame\ 14.png);
+    background-size: auto;
+    margin: 0;
+    font-family: Roboto;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    }
+
+header{
+    margin-top: 80px;
+    flex-grow: 20%;
+    margin-bottom: 200px;
+}
     
+main{
+    flex-grow: 60%;
+    margin-bottom: 5%;
 }
-
-.header{
-    flex-basis: 12%;
-    border: 2px solid red;
-}
-
-.main{
-    border: 2px solid green;
-    flex-basis: 76%;
-}
-
-.footer{
-    flex-basis: 12%;
-    border: 2px solid yellow;
+    
+footer{
+    flex-grow: 20%;
 }
 
 .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    max-width: 1581px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.slogan{
+    color: rgba(12, 62, 138, 1);
     text-align: center;
-   
+    padding: 0;
+    margin: 0;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+.site{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0em;
+    color: rgba(12, 62, 138, 1);
+    text-align: center;
+}
+
+button{
+    display: inline-block;
+    background: transparent;
+    border: none;  
+}
+
+button.main{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button{
+    width: 614px;
+    height: 45px;
+    background-color:  rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(12, 62, 138, 1);
+}
+
+p.button{
+    padding: 15px;
+}
+
+.download{
+    text-align: center;
+}
+
+.icon{
+    text-align: right;
+}
+
+@media (max-width: 1980px) {
+    .content {
+        max-width: 1581px;
+        margin: 0, 165px;
+    }
+}
+
+@media (max-width: 1558px) {
+    .content {
+        max-width: 1130px;
+        margin: 0, 150px;
+    }
+
+    p.slogan{
+        font-size: 90px;
+    }
+
+    footer{
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        max-width: 970px;
+        margin: 0, 165px;
+    }
+
+    p.slogan{
+        font-size: 60px;
+    }
+    .site{
+        font-size: 20px;
+    }
     
+    header{
+        margin-top: 5%;
+        margin-bottom: 20%;
+    }
+
+    .button{
+        height: 25px;
+        font-size: 25px;
+        margin-top: 10%;
+    }
+
+    p.button{
+        padding: 10px;
+    }
+
+    footer{
+        margin-top: 10%;
+    }
+
+    .icon{
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        max-width: 750px;
+        margin: 0, 41px;
+    }
+
+    body{
+        background-size: cover;
+    }
+
+    header{
+        margin-top: 10%;
+        margin-bottom: 30%;
+    }
+
+    main{
+        margin-bottom: 5%
+    }
+
+    .icon{
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    
+    .button{
+        width: 450px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .content {
+        max-width: none;
+        margin: 0, 23px;
+    }
+
+    body{
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .logo{
+        width: 134px;
+    }
+
+    p.slogan{
+        font-size: 40px;
+    }
+
+    .button{
+        width: 200px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    main{
+        margin-bottom: 25%
+    }
+
+    img.download{
+        display: block;
+        width: 170px;
+        height: 40px;
+        text-align: center;
+        
+    }
+
+    .download{
+        margin-bottom: 10%;
+    }
+
+    .icon{
+        text-align: center;
+    }
+
 }
