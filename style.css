@@ -1,0 +1,39 @@
+.container{
+    background-image: url(/images/Для\ банера\ 2.svg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    max-width: 1563px;
+    height: 99vh;
+    border: 2px solid black;
+    margin: 0 208px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header{
+    flex-basis: 12%;
+    border: 2px solid red;
+}
+
+.main{
+    border: 2px solid green;
+    flex-basis: 76%;
+}
+
+.footer{
+    flex-basis: 12%;
+    border: 2px solid yellow;
+}
+
+.logo{
+    text-align: center;
+   
+    
+}
