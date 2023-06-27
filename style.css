@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto;
-    src: url(/fonts/Roboto/Roboto-Bold.ttf);
+    src: url(fonts/Roboto/Roboto-Bold.ttf);
     font-style: normal;
     font-weight: 700;
 }
@@ -227,7 +227,7 @@ p.button{
     }
 
     main{
-        margin-bottom: 25%
+        margin-bottom: 10%
     }
 
     img.download{
@@ -239,11 +239,12 @@ p.button{
     }
 
     .download{
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
     .icon{
         text-align: center;
+        margin-top: 5%;
     }
 
 }
